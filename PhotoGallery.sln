@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGallery.Website", "PhotoGallery.Website\PhotoGallery.Website.csproj", "{A16C7A8D-6847-4DEC-A835-0D70B0748C63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M3.Common", "M3.Common", "{175068B8-F172-4739-92B3-F23D2CF40B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3.Configurations", "M3.Common\M3.Configurations\M3.Configurations.csproj", "{A90E1AD0-D568-4583-A97F-EDB34A01255C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3.Helpers", "M3.Common\M3.Helpers\M3.Helpers.csproj", "{D3E6D540-78BE-4AC0-A147-D0F237F618DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3.Models", "M3.Common\M3.Models\M3.Models.csproj", "{10C26A41-0347-45E6-8A25-E69BE6598BCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{3D71849F-93A8-43EE-8B8A-B49D631944AE}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Newegg.Framework.Web.dll = Lib\Newegg.Framework.Web.dll
+		Lib\Newegg.Framework.Web.pdb = Lib\Newegg.Framework.Web.pdb
+		Lib\Newtonsoft.Json.dll = Lib\Newtonsoft.Json.dll
+		Lib\Newtonsoft.Json.pdb = Lib\Newtonsoft.Json.pdb
+		Lib\Newtonsoft.Json.xml = Lib\Newtonsoft.Json.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A16C7A8D-6847-4DEC-A835-0D70B0748C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16C7A8D-6847-4DEC-A835-0D70B0748C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16C7A8D-6847-4DEC-A835-0D70B0748C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16C7A8D-6847-4DEC-A835-0D70B0748C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90E1AD0-D568-4583-A97F-EDB34A01255C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90E1AD0-D568-4583-A97F-EDB34A01255C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90E1AD0-D568-4583-A97F-EDB34A01255C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90E1AD0-D568-4583-A97F-EDB34A01255C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E6D540-78BE-4AC0-A147-D0F237F618DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E6D540-78BE-4AC0-A147-D0F237F618DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E6D540-78BE-4AC0-A147-D0F237F618DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E6D540-78BE-4AC0-A147-D0F237F618DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C26A41-0347-45E6-8A25-E69BE6598BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C26A41-0347-45E6-8A25-E69BE6598BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C26A41-0347-45E6-8A25-E69BE6598BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C26A41-0347-45E6-8A25-E69BE6598BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A90E1AD0-D568-4583-A97F-EDB34A01255C} = {175068B8-F172-4739-92B3-F23D2CF40B76}
+		{D3E6D540-78BE-4AC0-A147-D0F237F618DC} = {175068B8-F172-4739-92B3-F23D2CF40B76}
+		{10C26A41-0347-45E6-8A25-E69BE6598BCD} = {175068B8-F172-4739-92B3-F23D2CF40B76}
+	EndGlobalSection
+EndGlobal
