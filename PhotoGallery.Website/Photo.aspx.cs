@@ -8,9 +8,17 @@ namespace PhotoGallery.Website
 {
     public partial class Photo : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected override void OnPreRender(EventArgs e)
         {
+            CategoryID = this.Request.QueryString["categoryId"];
+            PhotoID = this.Request.QueryString["photoId"];
 
+            base.OnPreRender(e);
         }
+
+
+        protected string CategoryID { get; set; }
+
+        protected string PhotoID { get; set; }
     }
 }

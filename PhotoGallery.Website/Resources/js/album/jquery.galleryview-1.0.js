@@ -24,33 +24,6 @@
         var d_thumb = [];
         var d_thumbIndex = {};
 
-        //d_albums["1"] = {
-        //    id: 1, name: "2014春游", page: 1, year: 2014,
-        //    cover: { id: 1, title: "第1页第1张", description: "第1张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/1.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/1.jpg" },
-        //    photos: [
-        //         [{ id: 1, title: "第1页第1张", description: "第1张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/1.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/1.jpg" },
-        //         { id: 2, title: "第1页第2张", description: "第2张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/2.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/2.jpg" },
-        //         { id: 3, title: "第1页第2张", description: "第3张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/3.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/3.jpg" },
-        //         { id: 4, title: "第1页第2张", description: "第4张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/4.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/4.jpg" },
-        //         { id: 5, title: "第1页第2张", description: "第5张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/5.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/5.jpg" },
-        //         { id: 6, title: "第1页第2张", description: "第6张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/6.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/6.jpg" },
-        //         { id: 7, title: "第1页第2张", description: "第7张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/7.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/7.jpg" },
-        //         { id: 8, title: "第1页第2张", description: "第8张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/8.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/8.jpg" },
-        //         { id: 9, title: "第1页第2张", description: "第9张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/9.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/9.jpg" },
-        //         { id: 10, title: "第1页第2张", description: "第10张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/10.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/10.jpg" },
-        //         { id: 11, title: "第1页第2张", description: "第11张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/11.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/11.jpg" },
-        //         { id: 12, title: "第1页第2张", description: "第12张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/12.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/12.jpg" },
-        //         { id: 13, title: "第1页第2张", description: "第13张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/13.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/13.jpg" },
-        //         { id: 14, title: "第1页第2张", description: "第14张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/14.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/14.jpg" },
-        //         { id: 15, title: "第1页第2张", description: "第15张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/15.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/15.jpg" },
-        //         { id: 16, title: "第1页第2张", description: "第16张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/16.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/16.jpg" },
-        //         { id: 17, title: "第1页第2张", description: "第17张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/17.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/17.jpg" },
-        //         { id: 18, title: "第1页第2张", description: "第18张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/18.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/18.jpg" },
-        //         { id: 19, title: "第1页第2张", description: "第19张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/19.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/19.jpg" },
-        //         { id: 20, title: "第1页第2张", description: "第20张", thumbnailUrl: "http://www.tn3gallery.com/images/114x72/20.jpg", normalUrl: "http://www.tn3gallery.com/images/920x360/20.jpg" }],
-        //    ]
-        //};
-
         function loadImages(handler) {
 
             currentPage = currentPage ? currentPage : 1;
@@ -70,7 +43,7 @@
                 };
 
                 $.ajax({
-                    url: opts.baseUrl + "api/gallery/detail/" + param,
+                    url: opts.baseUrl + "api/getDetail.aspx?page=" + currentPage + "&id=" + currentAlbumId,
                     processData: false,
                     dataType: "jsonp",
                     jsonpCallback: "proxy",

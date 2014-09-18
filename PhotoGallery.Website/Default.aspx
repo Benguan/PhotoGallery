@@ -354,7 +354,7 @@
         function flickr(callback, page) {
             var apiHost = "";
             var api = "API/GetDetails.aspx?ids=" + page + "," + ++page + "&page=1";
-            var album = "/Home/Album";
+            var album = "/photo.aspx";
             var url = apiHost + api;
 
             jQuery.ajax({
